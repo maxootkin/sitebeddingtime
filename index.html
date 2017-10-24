@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Bedding Time</title>
+    <meta name="Keywords" content="постельное, белье, пошив">
+    <meta name="description" content="Изготовление и продажа постельного белья на заказ">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
   </head>
@@ -13,9 +16,11 @@
           <div class="header-logo">
             <img src="img/logo.svg" alt="Bedding Time" width="125" height="125">
           </div>
-          <ul class="main-nav">            
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Отзывы</a></li>
+          <ul class="main-nav clearfix">            
+            <li><a href="#catal">Каталог</a></li>
+            <li><a href="#rew">Отзывы</a></li>
+            <li><a href="#wiki">Справочник</a></li>
+            <li><a href="#help">Помощь</a></li>
           </ul>          
         </div>
         <div class="promo">
@@ -33,7 +38,7 @@
           </li>
           <li class="feature-item feature-quality">
             <h2 class="feature-title">Качество</h2>
-            <p>Наши изделя выполнены из качественных льняных, хлопковых тканей.</p>
+            <p>Наши изделия выполнены из качественных льняных, хлопковых тканей.</p>
           </li>
           <li class="feature-item feature-safety">
             <h2 class="feature-title">Безопасность</h2>
@@ -46,24 +51,24 @@
     <div class="popular-and-price">
       <div class="container">
         <h2 class="section-title">Популярные товары</h2>
-        <a class="btn" href="#" title="Посмотреть все товары">Каталог</a>
+        <a class="btn to-catalog" name="catal" href="#" title="Посмотреть все товары">Каталог</a>
         <div class="popular-items clearfix">
           <div class="catalog-item">
-            <img src="img/glasses-1.jpg" alt="Постельное белье «Классика жанра»" width="306" height="206">
+            <img src="img/img-1.jpg" alt="Постельное белье «Классика жанра»" width="306" height="206">
             <h3>Постельное белье «Классика жанра»</h3>
             <b class="catalog-item-price">1300 р.</b>
             <a href="#" class="btn btn-info">Описание</a>
             <a href="#" class="btn btn-buy">Купить</a>
           </div>
           <div class="catalog-item">
-            <img src="img/glasses-2.jpg" alt="Постельное белье «Волки»" width="306" height="206">
+            <img src="img/img-2.jpg" alt="Постельное белье «Волки»" width="306" height="206">
             <h3>Постельное белье «Волки»</h3>
             <b class="catalog-item-price">1400 р.</b>
             <a href="#" class="btn btn-info">Описание</a>
             <a href="#" class="btn btn-buy">Купить</a>
           </div>
           <div class="catalog-item">
-            <img src="img/glasses-3.jpg" alt="Постельное белье «Подсолнух»" width="306" height="206">
+            <img src="img/img-3.jpg" alt="Постельное белье «Подсолнух»" width="306" height="206">
             <h3>Постельное белье «Подсолнух»</h3>
             <b class="catalog-item-price">1500 р.</b>
             <a href="#" class="btn btn-info">Описание</a>
@@ -81,17 +86,17 @@
           <tr>
             <td class="price-number">1.</td>
             <td class="price-name">Пошив постельного набора</td>            
-            <td>1500 руб.</td>
+            <td class="price-cost">1500 руб.</td>
           </tr>
           <tr>
             <td class="price-number">2.</td>
             <td class="price-name">Пошив постельного набора по индивидуальным размерам</td>            
-            <td>2300 руб.</td>
+            <td class="price-cost">2300 руб.</td>
           </tr>
           <tr>
             <td class="price-number">3.</td>
             <td class="price-name">Пошив постельного элемента</td>            
-            <td>от 300 руб.</td>
+            <td class="price-cost">от 300 руб.</td>
           </tr>
           <tr>
             <td class="price-number">4.</td>
@@ -105,7 +110,7 @@
     <div class="reviews">
       <div class="container">
         <h2 class="section-title">Довольные клиенты</h2>
-        <a class="btn" href="#" title="Посмотреть все отзывы">Все отзывы</a>
+        <a class="btn to-all-reviews" name="rew" href="#" title="Посмотреть все отзывы">Все отзывы</a>
         <div class="reviews-list clearfix">
           <blockquote class="review-item">
             <p>Благодарю  за оперативную доставку заказа. Приятно что во время телефонного разговора мне посоветовали немного изменить заказ в пользу товара лучшего качества и меньшей стоимости. В общем, с вами приятно иметь дело. Спасибо.</p>
@@ -119,10 +124,10 @@
       </div>
     </div>
 
-    <div class="cat-reference">
+    <div class="reference">
       <div class="container">
         <h2 class="section-title">Немного теории</h2>
-        <a class="btn" href="#" title="Открыть справочник">Справочник</a>
+        <a class="btn  to-full-reference" name="wiki" href="#" title="Открыть справочник">Справочник</a>
         <dl>
           <dt>
             <h3 class="reference-title">Хлопок</h3>
@@ -150,30 +155,27 @@
     <div class="feedback">
       <div class="container">
         <h2 class="section-title">Остались вопросы?</h2>
-        <p class="feedback-tip">Свяжитесь с нами и мы развеем оставшиеся у вас сомнения!</p>
-
+        <p class="feedback-tip"><a name="help"></a>Свяжитесь с нами и мы развеем оставшиеся у вас сомнения!</p>
         <form class="feedback-form" action="/keksby-mail" method="post">
           <div class="feedback-form-group">
             <label for="fullname">Представьтесь, пожалуйста:</label>
             <input type="text" name="fullname" id="fullname">
           </div>
-
-          <div class="feedback-form-group">
-            <label for="phone">Контактный телефон:</label>
-            <input type="text" name="phone" id="phone">
+          <div class="clearfix">
+            <div class="feedback-form-group feedback-form-group-left-part">
+              <label for="phone">Контактный телефон:</label>
+              <input type="text" name="phone" id="phone">
+            </div>
+            <div class="feedback-form-group feedback-form-group-right-part">
+              <label for="email">Электронная почта:</label>
+              <input type="text" name="email" id="email">
+            </div>
           </div>
-
-          <div class="feedback-form-group">
-            <label for="email">Электронная почта:</label>
-            <input type="text" name="email" id="email">
-          </div>
-
           <div class="checkbox-area">
             <label>
               <input type="checkbox" name="subscription"> Я согласен получать спам и смс на телефон
             </label>
           </div>
-
           <div class="feedback-form-group">
             <label for="topic">Тема обращения:</label>
             <select name="topic" id="topic">
@@ -182,7 +184,6 @@
               <option value="3">Жалоба</option>
             </select>
           </div>
-
           <div class="feedback-form-group">
             <label for="message">Текст обращения:</label>
             <textarea name="message" id="message"></textarea>
@@ -200,21 +201,12 @@
             <img src="img/logo.svg" alt="Bedding Time" width="100" height="100">
           </div>          
         </div>
-
-        <div class="footer-middle clearfix">
-          <!--<div class="footer-menu">
-            <h3>Магазин</h3>
-            <ul>
-              <li><a href="#">Домики</a></li>
-              <li><a href="#">Одежда</a></li>
-              <li><a href="#">Постельное белье</a></li>
-            </ul>
-          </div>!-->
+        <div class="footer-middle clearfix">          
           <div class="footer-menu">
             <h3>Отзывы</h3>
             <ul>
-              <li><a href="#">Показать</a></li>
-              <li><a href="#">Оставить</a></li>
+              <li><a href="#rew">Показать</a></li>
+              <li><a href="#help">Оставить</a></li>
             </ul>
           </div>
           <div class="footer-menu">
@@ -224,19 +216,17 @@
             </ul>
           </div>
         </div>
-
         <div class="footer-bottom clearfix">
           <div class="footer-social">
-            <b>Давайте дружить!</b>
+            <b>Мы в соцсетях</b>
             <a class="social-btn" href="https://vk.com/#">Вконтакте</a>
             <a class="social-btn" href="https://facebook.com/#">Фейсбук</a>
             <a class="social-btn" href="https://instagram.com/#">Инстаграм</a>
           </div>
           <div class="footer-copyright">
-            <span class="heart"></span> <a href="https://maxootkin.ru">maxootkin</a>
+            <span class="heart"></span> <a href="https://maxootkin.ru">© 2017 maxootkin</a>
           </div>
         </div>
-
       </div>
     </div>
   </body>
